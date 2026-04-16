@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <title>Mwinda - Landing Page</title>
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <section class="hero bg-blue-500 text-white h-screen flex flex-col justify-center items-center text-center">
+        <h1 class="text-5xl font-bold animate__animated animate__fadeIn">Welcome to Mwinda</h1>
+        <p class="mt-4 text-lg animate__animated animate__fadeIn" style="animation-delay: 0.5s;">Your platform for learning, growth, and empowerment.</p>
+        <a href="#features" class="mt-6 bg-white text-blue-500 px-4 py-2 rounded-full shadow-lg animate__animated animate__fadeIn" style="animation-delay: 1s;">Explore Features</a>
+    </section>
+
+    <section id="features" class="features bg-white py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-10">Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="feature bg-gray-200 p-6 rounded-lg shadow-md animate__animated animate__fadeInUp">
+                    <h3 class="text-xl font-semibold">Feature 1</h3>
+                    <p class="mt-2">Description of feature 1.</p>
+                </div>
+                <div class="feature bg-gray-200 p-6 rounded-lg shadow-md animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
+                    <h3 class="text-xl font-semibold">Feature 2</h3>
+                    <p class="mt-2">Description of feature 2.</p>
+                </div>
+                <div class="feature bg-gray-200 p-6 rounded-lg shadow-md animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                    <h3 class="text-xl font-semibold">Feature 3</h3>
+                    <p class="mt-2">Description of feature 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta bg-blue-500 text-white py-10 text-center">
+        <h2 class="text-2xl font-semibold mb-4">Join Us Today!</h2>
+        <p class="mb-6">Sign up now and start your journey with Mwinda.</p>
+        <a href="#" class="bg-white text-blue-500 px-4 py-2 rounded-full shadow-lg">Get Started</a>
+    </section>
+
+    <script>
+        gsap.from('.hero', { duration: 1, y: -100, opacity: 0 });
+        gsap.from('.features', { duration: 1, opacity: 0, delay: 0.5 });
+    </script>
+</body>
+</html>
